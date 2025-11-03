@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Serengeti Expedition",
+        "description": "A 7-day adventure through the stunning Serengeti National Park.",
+        "price": 2500
+    },
+    {
+        "name": "Maasai Mara Discovery",
+        "description": "Explore the iconic Maasai Mara and witness the Great Migration.",
+        "price": 3000
+    },
+    {
+        "name": "Kruger National Park Safari",
+        "description": "Discover the 'Big Five' in South Africa's most famous game reserve.",
+        "price": 2800
+    },
+    {
+        "name": "Okavango Delta Adventure",
+        "description": "A 10-day trip through the wetlands of the Okavango Delta.",
+        "price": 4000
+    },
+    {
+        "name": "Gorilla Trekking in Rwanda",
+        "description": "An unforgettable experience trekking with gorillas in their natural habitat.",
+        "price": 3500
+    }
+]
