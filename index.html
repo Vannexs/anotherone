@@ -104,16 +104,19 @@
                 <h3>Serengeti Expedition</h3>
                 <p>A 7-day adventure through the stunning Serengeti National Park.</p>
                 <p class="price">$2,500</p>
+                <button class="book-now-button">Book Now</button>
             </div>
             <div class="package">
                 <h3>Maasai Mara Discovery</h3>
                 <p>Explore the iconic Maasai Mara and witness the Great Migration.</p>
                 <p class="price">$3,000</p>
+                <button class="book-now-button">Book Now</button>
             </div>
             <div class="package">
                 <h3>Kruger National Park Safari</h3>
                 <p>Discover the "Big Five" in South Africa's most famous game reserve.</p>
                 <p class="price">$2,800</p>
+                <button class="book-now-button">Book Now</button>
             </div>
         </div>
     </section>
@@ -127,5 +130,37 @@
         <p>Contact us: info@safariadventures.com</p>
         <p>&copy; 2025 Safari Adventures. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mouseover effect for safari packages
+        document.querySelectorAll('.package').forEach(pkg => {
+            pkg.addEventListener('mouseover', () => {
+                pkg.style.transform = 'scale(1.05)';
+                pkg.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            });
+            pkg.addEventListener('mouseout', () => {
+                pkg.style.transform = 'scale(1)';
+                pkg.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+            });
+        });
+
+        // "Book Now" button alert
+        document.querySelectorAll('.book-now-button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Thank you for your interest! This feature is coming soon.');
+            });
+        });
+    </script>
 </body>
 </html>
